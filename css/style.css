@@ -1,0 +1,94 @@
+* {
+box-sizing: border-box;
+}
+.dws-menu .dws-ul{
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  background-color: cadetblue;
+  position: relative;
+}
+a {
+  display: block;
+  text-align: center;
+  padding: 30px 20px;
+  line-height: 40px;
+  min-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+}
+
+a::before {
+  content: '';
+  width: 20px;
+  height: 0px;
+  background-color: blue;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: .5s;
+  mix-blend-mode: multiply;
+}
+
+a::after {
+  content: '';
+  width: 20px;
+  height: 0px;
+  background-color: red;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transition: .5s;
+  mix-blend-mode: multiply;
+}
+
+li.dws-li:hover {
+  background-color: yellowgreen;
+  d
+}
+
+a:hover::before {
+  width: 50%;
+  height: 10px;
+  transform: translateX(100%);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+a:hover::after {
+  height: 10px;
+  width: 50%;
+  transform: translateX(-100%);
+  border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+}
+
+li a:hover {
+  color: red;
+}
+
+.dws-ul ul {
+  position: absolute;
+  left: o;
+  top: 100%;
+  display: none;
+  padding: 0;
+}
+
+ul li:hover > ul {
+  display: block;
+}
+
+.dws-ul ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
