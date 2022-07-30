@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/SSSergiy/menu/issues"
   },
-  "homepage": "https://github.com/SSSergiy/menu#readme"
+  "homepage": "https://github.com/SSSergiy/menu#readme",
+  "dependencies": {
+    "css-reset-and-normalize": "^2.3.6",
+    "font-awesome-stylus": "^4.7.1"
+  }
 }
