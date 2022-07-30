@@ -8,7 +8,11 @@
   justify-content: center;
 }
 
-li {
+.dws-menu > .dws-ul {
+  background: rgb(179, 220, 237);
+}
+
+.dws-li {
   box-shadow: 10px 5px 5px 5px rgba(179, 220, 237, 1);
   list-style: none;
   padding: 10px;
@@ -77,12 +81,14 @@ a::after {
   transition: .5s;
   mix-blend-mode: multiply;
 }
+
 .dws-li {
   border: 3px solid#ff00c800;
 }
+
 .dws-li:hover {
   border: 3px solid#ff00c8;
-  box-shadow: 1px 1px 1px 1px#ff00c8,1px 1px 1px 1px#ff00c8;
+  box-shadow: 1px 1px 1px 1px#ff00c8, 1px 1px 1px 1px#ff00c8;
   background: rgb(208, 228, 247);
   background: -moz-linear-gradient(top, rgba(208, 228, 247, 1) 0%, rgba(115, 177, 231, 1) 24%, rgba(10, 119, 213, 1) 50%, rgba(83, 159, 225, 1) 79%, rgba(135, 188, 234, 1) 100%);
   background: -webkit-linear-gradient(top, rgba(208, 228, 247, 1) 0%, rgba(115, 177, 231, 1) 24%, rgba(10, 119, 213, 1) 50%, rgba(83, 159, 225, 1) 79%, rgba(135, 188, 234, 1) 100%);
@@ -111,7 +117,7 @@ a:hover {
   text-shadow: 5px 5px 5px #ff00c8;
 }
 
-a:hover + span {
+a:hover+span {
   width: 0;
   height: 0;
   border-style: solid;
@@ -128,7 +134,7 @@ a:hover + span {
   padding: 0;
 }
 
-ul li:hover > ul {
+ul li:hover>ul {
   display: block;
 }
 
